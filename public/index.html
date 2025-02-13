@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoctorNow - Your Health, Our Priority</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <div class="logo text-2xl font-bold">DoctorNow</div>
+    <nav class="nav space-x-4">
+      <a href="/" class="hover:text-blue-200">Home</a>
+      <a href="#doctors" class="hover:text-blue-200">Find Doctors</a>
+      <a href="#appointments" class="hover:text-blue-200">Appointments</a>
+      <a href="#login" class="hover:text-blue-200">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20 text-center">
+    <h1 class="text-5xl font-bold mb-4">Your Health, Our Priority</h1>
+    <p class="text-xl mb-8">Schedule appointments, consult doctors, and manage your health records seamlessly.</p>
+    <a href="#doctors" class="cta-button bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-100 transition-all">Find a Doctor</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+    <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold mb-4">Easy Scheduling</h2>
+      <p>Book appointments with just a few clicks.</p>
+    </div>
+    <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold mb-4">Remote Consultations</h2>
+      <p>Connect with doctors via video calls.</p>
+    </div>
+    <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold mb-4">Health Records</h2>
+      <p>Keep track of your medical history.</p>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="login bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto my-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Login</h2>
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm" required>
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm" required>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Login</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2024 DoctorNow. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
