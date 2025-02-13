@@ -1,3 +1,22 @@
+const express = require("express");
+const app = express();
+const cors = require("cors");
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Define routes
+app.use("/api/auth", require("./routes/authRoutes")); 
+
+// Default route (for testing)
+app.get("/", (req, res) => {
+  res.send("Backend is working!");
+});
+
+// Export the app for Vercel
+module.exports = app;
+
 require('dotenv').config();
 const mongoose = require('mongoose');
 
